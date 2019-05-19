@@ -1,0 +1,8 @@
+Function definition:
+
+	void nodupl(int *array, int sizeofarray)
+
+-- Parameters --
+	*array -- a pointer to the previously defined integer array.
+	
+	size -- the existing size of the given array as an integer.
