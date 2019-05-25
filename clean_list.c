@@ -32,6 +32,7 @@ void nodupl(int *a, int size)
         int n = 0;    /* used for inner traversal */
         int dupl = 0; /* used for duplication identification */
 
+        /* print pre-traversal */
         printf("pre-operation\n");
         for (; i < size; i++) {
                 printf("%d ", a[i]);
@@ -44,12 +45,12 @@ void nodupl(int *a, int size)
         b[0] = a[0];
         /*memset(b, 0, size*sizeof(int));*/
 
-        /* for each */
+        /* for each element within array *a */
         for(i=1; i < size; i++) {
                 dupl = 0;
 
                 /* for each element within array *b */
-                for(n = 0;n < newsize; n++) {
+                for(n = 0; n < newsize; n++) {
                         if (a[i] == b[n]) {
                                 /* duplicate has been found */
                                 dupl = 1;
@@ -65,6 +66,7 @@ void nodupl(int *a, int size)
         } /* end of for statement *a */
 
 
+        /* print post-traversal */
         printf("post-operation\n");
         for (i=0;i<newsize;i++) {
                 printf("%d ", b[i]);
