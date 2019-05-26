@@ -3,13 +3,13 @@ Function definition:
 	void nodupl(int *array, int sizeofarray)
 
 -- Parameters --
-	*array -- a pointer to the previously defined integer array.
+	*array -- a pointer to a previously defined integer array.
 	
 	size -- the existing size of the given array as an integer.
 
 
 -- Definition --
-	The defined function, nodupl (no duplicate), is able to take an array of
+	The defined function, nodupl (no duplicate), takes an array of
 	unsorted integers and removes all of the duplicate elements from the array.
 	The removed duplicates are replaced with a placeholder integer, 0. This does
 	not account for 0 already being an element within the array and will need to
@@ -21,12 +21,34 @@ Function definition:
 	Although not prime, it is a good starting point for the development of this
 	function.
 
--- TODO --
-	- improve nodupl so as the function takes in an array of any type and
-		preforms the same operation.
+
+
+Function definition:
+
+	void nosdupl(int *array, int sizeofarray)
+
+-- Parameters --
+	*array -- a pointer to a previously defined integer array. The array provided
+		must be sorted.
 	
-	- construct and push nosdupl (a similar function to nodupl, however takes
-		into account that the that the array given is already sorted).
+	size -- the existing size of the given array as an integer.
+	
+
+-- Definition --
+	The defined function, nosdupl (no sorted duplicate), takes an already sorted
+	integer array and removes all the duplicate elements from within the array.
+	The removed duplicates are replaced with a placeholder integer, 0. This does
+	not account for 0 already being an element within the array and will need to
+	be dealt with at a later date.
+	
+	The theoretical run time for the function to finish its best and worst case
+	senario is O(n).
+
+
+
+-- TODO --
+	- improve nodupl and nosdupl so as the function takes in an array of any
+		type and preforms the same operation.
 	
 
 I wrote this so you dont forget, dumbass.
