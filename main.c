@@ -22,5 +22,12 @@ int main(void) {
         }
         printf("\n");
 
+        /* define sorted array */
+        int d[11] = {1, 2, 2, 3, 5, 6, 6, 7, 7, 7, 9};
+        size = sizeof(d) / sizeof(int);
+
+        printf("\n");
+        nosdupl(d,size);
+
         return 0;
 }
